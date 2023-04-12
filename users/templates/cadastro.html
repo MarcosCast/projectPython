@@ -1,13 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-</head>
-<body>
-    <h1 style="color: blue; font-size: 28px;">Página de Cadastro</h1>
+{% extends 'bases/base.html' %}
+{% load static %}
+{% block 'head' %}
     
-</body>
-</html>
+{% endblock %}
+
+{% block 'body' %}
+
+    <div class="container-fluid bg-inscricao">
+        
+        <div class="row">
+            <div class="col-md">
+                <h3 class="logo">Type.Event</h3>
+
+                
+
+                <img src="{% static 'geral/img/logo_evento.png' %}" class="logo-evento">
+
+            </div>
+
+            <div class="col-md bg-img">
+            
+            </div>
+        
+        </div>
+    </div>
+
+{% endblock %}
