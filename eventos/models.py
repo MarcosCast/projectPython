@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+from django.db import models
 
 class Evento(models.Model):
     criador = models.ForeignKey(User, on_delete=models.DO_NOTHING)
@@ -15,5 +16,5 @@ class Evento(models.Model):
     cor_fundo = models.CharField(max_length=7)
     
 
-    def __str__(self):
-        return self.nome
+'''def __str__(self):
+        return self.nome'''
