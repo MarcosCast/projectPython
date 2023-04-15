@@ -5,6 +5,7 @@ from .models import Evento
 from django.urls import reverse
 from django.contrib import messages
 from django.contrib.messages import constants
+from django.http import Http404
 
 @login_required
 
@@ -68,6 +69,8 @@ def inscrever_evento(request, id):
    
 def participantes_evento(request, id):
     evento = get_object_or_404(Evento, id=id)
+    if not evento.criador == request.user:
+        raise Http404('Esse evento não é seu')
     if request.method == "GET":
-        participantes = evento.participantes.all()[::3]
+        participantes = evento.participantes.all()#[::3]
         return render(request, 'participantes_evento.html', {'evento': evento, 'participantes': participantes})
