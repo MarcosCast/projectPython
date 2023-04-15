@@ -16,6 +16,5 @@ class Evento(models.Model):
     cor_secundaria = models.CharField(max_length=7)
     cor_fundo = models.CharField(max_length=7)
     
-
     def __str__(self):
         return self.nome

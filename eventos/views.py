@@ -55,9 +55,19 @@ def gerenciar_evento(request):
     
 @login_required 
 def inscrever_evento(request, id):
-		# Validar login
     evento = get_object_or_404(Evento, id=id)
     if request.method == "GET":
-        return render(request, 'inscrever_evento.html', {'evento': evento})     
+        return render(request, 'inscrever_evento.html', {'evento': evento})
+    elif request.method == "POST":
+        # Validar se o usuário já é um participante
+        evento.participantes.add(request.user)
+        evento.save()
 
+        messages.add_message(request, constants.SUCCESS, 'Inscrição feita com sucesso.')
+        return redirect(f'/eventos/inscrever_evento/{id}/')
    
+def participantes_evento(request, id):
+    evento = get_object_or_404(Evento, id=id)
+    if request.method == "GET":
+        participantes = evento.participantes.all()[::3]
+        return render(request, 'participantes_evento.html', {'evento': evento, 'participantes': participantes})
