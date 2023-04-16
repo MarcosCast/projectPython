@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
-from .models import Evento
+from .models import Evento, Certificado
 from django.urls import reverse
 from django.contrib import messages
 from django.contrib.messages import constants
@@ -95,3 +95,11 @@ def gerar_csv(request, id):
             writer.writerow(x)
 
     return redirect(f'/media/{token}')
+
+def certificados_evento(request, id):
+    evento = get_object_or_404(Evento, id=id)
+    if not evento.criador == request.user:
+        raise Http404('Esse evento não é seu')
+    if request.method == "GET":
+        qtd_certificados = evento.participantes.all().count() - Certificado.objects.filter(evento=evento).count()
+        return render(request, 'certificados_evento.html', {'evento': evento, 'qtd_certificados': qtd_certificados})
