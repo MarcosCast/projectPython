@@ -126,6 +126,7 @@ def gerar_certificado(request, id):
         fonte_nome = ImageFont.truetype(path_fonte, 60)
         fonte_info = ImageFont.truetype(path_fonte, 30)
 
+        # Ajustar posição
         draw.text((230, 651), f"{participante.username}", font=fonte_nome, fill=(0, 0, 0))
         draw.text((761, 782), f"{evento.nome}", font=fonte_info, fill=(0, 0, 0))
         draw.text((816, 849), f"{evento.carga_horaria} horas", font=fonte_info, fill=(0, 0, 0))
@@ -151,3 +152,15 @@ def gerar_certificado(request, id):
     
     messages.add_message(request, constants.SUCCESS, 'Certificados gerados com sucesso!')
     return redirect(reverse('certificados_evento', kwargs={'id': evento.id}))
+
+def procurar_certificado(request, id):
+    evento = get_object_or_404(Evento, id=id)
+    if not evento.criador == request.user:
+        raise Http404('Esse evento não é seu')
+    email = request.POST.get('email')
+    certificado = Certificado.objects.filter(evento=evento).filter(participante__email=email).first()
+    if not certificado:
+        messages.add_message(request, constants.WARNING, 'Certificado não encontrado')
+        return redirect(reverse('certificados_evento', kwargs={'id': evento.id}))
+    
+    return redirect(certificado.certificado.url)
