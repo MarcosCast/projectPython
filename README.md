@@ -19,7 +19,7 @@ Visualização de certificados: Visualize todos os certificados gerados em um s�
 
 Bem, algumas coisas que posso mencionar são os desafios que encontrei ao trabalhar com class-based views, lidar com autenticação de usuários e autorização de acesso, manipulação de modelos e bancos de dados relacionais, além de trabalhar com arquivos e imagens e manipular solicitações GET e POST. Também encontrei algumas dificuldades específicas ao lidar com o pacote PIL para manipulação de imagens e ao gerar certificados personalizados para participantes de eventos.
 
-# Próximas Melhorias 
+## Próximas Melhorias 
 Acredito que o código pode ser melhorado com uma validação de formulários mais robusta e testes automatizados adequados.
 
 ## Aprendizados
