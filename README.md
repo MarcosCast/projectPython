@@ -1,5 +1,5 @@
 # Página de eventos em Django
-# Apresentação do Projeto
+## Apresentação do Projeto
 
 Este projeto fornece uma interface amigável para gerenciamento de eventos, incluindo cadastro e login de usuários, criação de eventos, visualização de eventos e geração de certificados. Construída usando Python com o poderoso framework Django, nossa aplicação foi projetada para otimizar o processo de gerenciamento de eventos e fornecer uma experiência perfeita para nossos usuários.
 
@@ -15,17 +15,17 @@ Geração de certificados: Gere certificados para os eventos que você participa
 
 Visualização de certificados: Visualize todos os certificados gerados em um só lugar para fácil acompanhamento e referência.
 
-# Dificuldades
+## Dificuldades
 
 Bem, algumas coisas que posso mencionar são os desafios que encontrei ao trabalhar com class-based views, lidar com autenticação de usuários e autorização de acesso, manipulação de modelos e bancos de dados relacionais, além de trabalhar com arquivos e imagens e manipular solicitações GET e POST. Também encontrei algumas dificuldades específicas ao lidar com o pacote PIL para manipulação de imagens e ao gerar certificados personalizados para participantes de eventos.
 
 # Próximas Melhorias 
 Acredito que o código pode ser melhorado com uma validação de formulários mais robusta e testes automatizados adequados.
 
-# Aprendizados
+## Aprendizados
 Posso dizer que todo o projeto foi um aprendizado, há poucos anos que não desenvolvo algo mais robusto em python e foi muito bm não so relembrar, mas também aprender.
 
-# Apresentação Vídeo
+## Apresentação Vídeo
 
 Apresentação do projeto em vídeo: Em breve!
 
@@ -33,7 +33,7 @@ Apresentação do projeto em vídeo: Em breve!
 
 Link: Em breve!
 
-## 👨‍💻 Área do Desenvolvedor
+# 👨‍💻 Área do Desenvolvedor
 
 ## 🛠️ Tecnologias utilizadas no desenvolvimento
 
