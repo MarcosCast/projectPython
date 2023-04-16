@@ -157,10 +157,13 @@ def procurar_certificado(request, id):
     evento = get_object_or_404(Evento, id=id)
     if not evento.criador == request.user:
         raise Http404('Esse evento não é seu')
+    
     email = request.POST.get('email')
+
     certificado = Certificado.objects.filter(evento=evento).filter(participante__email=email).first()
+
     if not certificado:
-        messages.add_message(request, constants.WARNING, 'Certificado não encontrado')
+        messages.add_message(request, constants.WARNING, 'Esse certificado não foi encontrado')
         return redirect(reverse('certificados_evento', kwargs={'id': evento.id}))
     
     return redirect(certificado.certificado.url)
