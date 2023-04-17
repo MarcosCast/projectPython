@@ -8,7 +8,7 @@ As principais funcionalidades de nossa aplicação incluem:
 Cadastro e login de usuários: Crie uma conta e faça login com segurança em nossa aplicação para acessar todos os recursos.
 
 ![image](https://user-images.githubusercontent.com/118136902/232352349-d8e5989a-a1c1-4302-b9e2-7b73aa9e36db.png)
-![image](https://user-images.githubusercontent.com/118136902/232352383-d298c351-0a11-462a-9e18-053289d61d39.png)
+<!--![image](https://user-images.githubusercontent.com/118136902/232352383-d298c351-0a11-462a-9e18-053289d61d39.png) Corrigir imagem -->
 
 Criação de eventos: Crie novos eventos com alguns cliques simples. Adicione detalhes do evento, como nome, data, logo e descrição.
 
