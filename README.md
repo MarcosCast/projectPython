@@ -7,13 +7,27 @@ As principais funcionalidades de nossa aplicação incluem:
 
 Cadastro e login de usuários: Crie uma conta e faça login com segurança em nossa aplicação para acessar todos os recursos.
 
+![image](https://user-images.githubusercontent.com/118136902/232352349-d8e5989a-a1c1-4302-b9e2-7b73aa9e36db.png)
+![image](https://user-images.githubusercontent.com/118136902/232352383-d298c351-0a11-462a-9e18-053289d61d39.png)
+
 Criação de eventos: Crie novos eventos com alguns cliques simples. Adicione detalhes do evento, como nome, data, logo e descrição.
+
+![image](https://user-images.githubusercontent.com/118136902/232352451-373130ed-6379-4994-9688-0d02e61ee5bd.png)
+![image](https://user-images.githubusercontent.com/118136902/232352476-1afebda4-aebb-47a0-aeaf-899791aba0ba.png)
+![image](https://user-images.githubusercontent.com/118136902/232352566-86edb8f3-7b4d-4822-ace6-da63e1c71091.png)
+![image](https://user-images.githubusercontent.com/118136902/232352620-b88be0b5-9797-4a69-a021-e8e536137016.png)
 
 Visualização de eventos: Navegue facilmente e veja todos os eventos futuros, incluindo os detalhes.
 
+![image](https://user-images.githubusercontent.com/118136902/232352728-747b75be-fd96-4ffa-ac49-eac1ecebd6d2.png)
+
 Geração de certificados: Gere certificados para os eventos que você participar. Os certificados são personalizados com seu nome e detalhes do evento, tornando-os uma valiosa adição ao seu portfólio profissional.
 
+![image](https://user-images.githubusercontent.com/118136902/232352777-dc38c530-0029-4fac-ac28-1f63508ccea0.png)
+
 Visualização de certificados: Visualize todos os certificados gerados em um só lugar para fácil acompanhamento e referência.
+
+![image](https://user-images.githubusercontent.com/118136902/232352800-24090cce-2b2c-42ad-bc1a-7312fb2b630a.png)
 
 ## Dificuldades
 
