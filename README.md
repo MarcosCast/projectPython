@@ -15,7 +15,6 @@ Criação de eventos: Crie novos eventos com alguns cliques simples. Adicione de
 ![image](https://user-images.githubusercontent.com/118136902/232352451-373130ed-6379-4994-9688-0d02e61ee5bd.png)
 ![image](https://user-images.githubusercontent.com/118136902/232352476-1afebda4-aebb-47a0-aeaf-899791aba0ba.png)
 ![image](https://user-images.githubusercontent.com/118136902/232352566-86edb8f3-7b4d-4822-ace6-da63e1c71091.png)
-![image](https://user-images.githubusercontent.com/118136902/232352620-b88be0b5-9797-4a69-a021-e8e536137016.png)
 
 Visualização de eventos: Navegue facilmente e veja todos os eventos futuros, incluindo os detalhes.
 
