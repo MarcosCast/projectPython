@@ -52,6 +52,7 @@ Link: Em breve!
 
 #### *Python: Linguagem de programação interpretada de alto nível, com tipagem dinâmica e ampla variedade de bibliotecas para diversos fins.
 #### *Django: Framework web de alto nível em Python, com recursos como ORM, autenticação, administração, template engine e facilidades para criação de APIs RESTful.
+
 #### *Bootstrap: Biblioteca de componentes front-end para criação de interfaces web responsivas e estilizadas, baseada em HTML, CSS e JavaScript.
 #### *Pillow: Biblioteca em Python para processamento de imagens.
 
